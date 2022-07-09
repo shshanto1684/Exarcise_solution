@@ -1,13 +1,16 @@
 #include <stdio.h>
-#include <math.h>
 
 int main()
+
 {
-    int  p[3] ={10000, 12000, 15000}, r[3] ={6/100, 5.75/100, 5.25/100}, n = 15, c[3] ={0};
+    int A[3]={19000, 22350, 26812}, n = 15;
+    double p[3] ={0};
+    double r = 0.12;
+
 
     for(int i=0; i<3; i++) {
-        c[i] = p[i] * ((1+r[i]), n);
-        printf("%d\n", c[i]);
+        p[i] = A[i]/(1+r*n);
+        printf("%.2lf\n", p[i]);
     }
 
     return 0;
