@@ -20,5 +20,6 @@ int main()
         length = strn_length(string_name);
         printf("Length is: %d\n", length);
     }
+
     return 0;
 }
